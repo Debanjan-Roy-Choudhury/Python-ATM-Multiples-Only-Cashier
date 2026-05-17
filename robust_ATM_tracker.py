@@ -1,31 +1,7 @@
 print("The ATM \"Multiples Only\" Cashier".center(50, " "))
-# money = input("Enter the Amount of Money($) you Want: ")
-# try:
-#     num = int(float(money))
-#     if num <= 0:
-#         print("Error: Please enter an amount greater than zero.")
-#     elif(num%100==0):
-#         print(f"Processing for the amount {num} is going to withdrawal")
-#     else:
-#         print("Error: This machine only dispenses $100 bills")
-# except:
-#     print("This is not a number, enter a proper digit of number for the withdrawal proceedings")
-#
-# while True:
-#     value = input("Enter the Amount of Money($) you Want: ")
-#     try:
-#         num1 = int(float(value))
-#         if num1%100 != 0 or num1 <0:
-#             print("❌ Error: Invalid amount. Please enter a positive multiple of 100.")
-#             continue
-#         print(f"✅ Success! Processing ${num1}. Please collect your cash.")
-#         break
-#     except:
-#         print("⚠ That's not a valid number. Please use digits only.")
-
 while True:
     #input section
-    c = input("Enter the Amount of Money (or type 'finish' to stop): ").strip()
+    c = input("Enter the Amount of Money (or type 'finish' to stop): ")
 
     #use of 'Finish' to stop the Do while Loop or loop
     if c in ['finish', 'Finish', 'FINISH']:
