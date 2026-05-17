@@ -6,7 +6,7 @@ A highly secure, crash-resistant console application that simulates an ATM cash-
 In financial software, handling numerical input safely is critical. This project demonstrates advanced defensive programming in Python, ensuring that the system strictly processes valid transaction amounts (multiples of 100) while proactively catching formatting anomalies, text injections, and precision-loss traps.
 
 ## ⚙️ Core Logic & Advanced Edge-Case Handling
-* **Multi-Layered Input Cleansing:** Utilizes `.strip()` and conditional checking (`if not c:`) to immediately trap and flag accidental blank inputs or whitespace entries.
+* **Multi-Layered Input Cleansing:** Utilizes the conditional checking (`if not c:`) system to immediately trap and flag accidental blank inputs or whitespace entries.
 * **String-Level Decimal Isolation:** Rather than relying on float conversions—which introduce floating-point precision risks with extreme numbers—the script isolates decimals at the string level (`if "." in c:`) to protect financial logic integrity.
 * **Infinite-Precision Integer Tracking:** By passing clean strings directly to `int()`, the script leverages Python's native support for arbitrarily large integers, maintaining mathematical accuracy for massive values.
 * **Targeted Exception Handling:** Implements precise `except ValueError` blocks to elegantly catch and handle alphabetical inputs (e.g., typing "one hundred" instead of "100") without crashing the runtime.
